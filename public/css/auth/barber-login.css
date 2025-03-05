@@ -1,0 +1,354 @@
+/* Barber Shop Login Page Styles */
+:root {
+    --primary-color: #1e1e1e;
+    --secondary-color: #c59d5f;
+    --accent-color: #f5f5f5;
+    --text-color: #333333;
+    --error-color: #e74c3c;
+    --success-color: #2ecc71;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+.barber-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.login-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 600px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px var(--shadow-color);
+}
+
+/* Left side with barber image */
+.login-left {
+    flex: 1;
+    background-image: url('https://images.unsplash.com/photo-1621605815971-fbc98d665033?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.login-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(135deg, rgba(30, 30, 30, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%); */
+}
+
+/* Right side with login form */
+.login-right {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.login-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.login-header h1::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+.login-header p {
+    color: #777;
+    font-size: 16px;
+}
+
+/* Form styles */
+.login-form {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.form-group label i {
+    color: var(--secondary-color);
+    margin-right: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: var(--transition);
+}
+
+.form-group input:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 2px rgba(197, 157, 95, 0.2);
+    outline: none;
+}
+
+.password-input-wrapper {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #777;
+    transition: var(--transition);
+}
+
+.toggle-password:hover {
+    color: var(--secondary-color);
+}
+
+.error-message {
+    color: var(--error-color);
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input {
+    margin-right: 8px;
+}
+
+.forgot-password {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-button span {
+    z-index: 1;
+    margin-right: 10px;
+}
+
+.login-button i {
+    z-index: 1;
+}
+
+.login-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+}
+
+.login-button:hover {
+    background-color: #b38d45;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(197, 157, 95, 0.4);
+}
+
+.login-button:hover::before {
+    left: 100%;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #777;
+}
+
+.register-link a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+.login-footer {
+    margin-top: auto;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+}
+
+/* Alert styles */
+.alert {
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.alert-danger {
+    background-color: rgba(231, 76, 60, 0.1);
+    color: var(--error-color);
+    border: 1px solid rgba(231, 76, 60, 0.2);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .login-wrapper {
+        flex-direction: column;
+        max-width: 500px;
+    }
+
+    .login-left {
+        display: none;
+    }
+
+    .login-right {
+        padding: 30px 20px;
+    }
+}
+
+/* Custom checkbox styling */
+.remember-me input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: var(--transition);
+    position: relative;
+    cursor: pointer;
+}
+
+.remember-me input[type="checkbox"]:checked {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.remember-me input[type="checkbox"]:checked::before {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 12px;
+}
+
+.remember-me label {
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Animation for form elements */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-header,
+.form-group,
+.form-options,
+.login-button,
+.register-link {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.form-group:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.form-group:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.form-options {
+    animation-delay: 0.3s;
+}
+
+.login-button {
+    animation-delay: 0.4s;
+}
+
+.register-link {
+    animation-delay: 0.5s;
+}
