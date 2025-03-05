@@ -14,13 +14,12 @@ Barber-System is a modern appointment booking platform designed for barbershops.
 ### Prerequisites
 Ensure you have the following installed:
 - PHP (if using Laravel backend)
-- Node.js (if using React or Vue.js frontend)
 - MySQL (for database management)
 
 ### Steps to Install
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/barber-system.git
+   git clone https://github.com/Danyseifedine/Barber-Systenm.git
    ```
 2. Navigate to the project directory:
    ```bash
@@ -53,12 +52,6 @@ Ensure you have the following installed:
 - Barbers can manage their schedule and client appointments via the dashboard.
 - Admins have full control over the system settings and user management.
 
-## Technologies Used
-- **Backend:** Laravel / Node.js (depending on implementation)
-- **Frontend:** React / Vue.js
-- **Database:** MySQL
-- **Authentication:** JWT / Laravel Sanctum
-
 ## Contributing
 If you'd like to contribute, please fork the repository and submit a pull request.
 
@@ -66,5 +59,5 @@ If you'd like to contribute, please fork the repository and submit a pull reques
 This project is licensed under the MIT License.
 
 ## Contact
-For any inquiries or support, contact us at [your-email@example.com].
+For any inquiries or support, contact us at [dany.a.seifeddine@gmail.com].
 
