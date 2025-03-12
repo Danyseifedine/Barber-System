@@ -15,8 +15,10 @@
     <!--    Favicons-->
     <!-- ===============================================-->
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('core/vendor/img/favicons/apple-touch-icon.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('core/vendor/img/favicons/favicon-32x32.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('core/vendor/img/favicons/favicon-16x16.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="{{ asset('core/vendor/img/favicons/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="{{ asset('core/vendor/img/favicons/favicon-16x16.png') }}">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('core/vendor/img/favicons/favicon.ico') }}">
     <meta name="msapplication-TileColor" content="#008382">
     <meta name="msapplication-TileImage" content="{{ asset('core/vendor/img/favicons/mstile-150x150.png') }}">
@@ -81,7 +83,7 @@
     <script src="{{ url('core/vendor/js/plugins.bundle.js') }}"></script>
     <script src="{{ url('core/vendor/js/scripts.bundle.js') }}"></script>
     <script src="{{ url('core/vendor/js/datatables.bundle.js') }}"></script>
-    <script type="module" src="{{ asset('core/global/launcher.js') }}"></script>
+    <script type="module" src="{{ url('core/global/launcher.js') }}"></script>
     @stack('scripts')
 </body>
 
