@@ -135,7 +135,7 @@
     <script src="{{ url('core/vendor/js/plugins.bundle.js') }}"></script>
     <script src="{{ url('core/vendor/js/scripts.bundle.js') }}"></script>
     <script src="{{ url('core/vendor/js/datatables.bundle.js') }}"></script>
-    <script src="{{ asset('core/global/Launcher.js') }}" type="module"></script>
+    <script src="{{ asset('core/global/launcher.js') }}" type="module"></script>
     @stack('scripts')
 </body>
 <!--end::Body-->
